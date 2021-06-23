@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Scraping with Electron</title>
+</head>
+<body>
+
+  <!-- Electron webview -->
+  <webview
+    style="min-height: 85vh;"
+    src="http://pdfview.tonb.ru:8088/Default.aspx?bd=EI&mfn=10408"
+    useragent="My Super Browser v1.0 Youpi Tralala !">
+  </webview>
+
+  <a href="#" onclick="childLoadURL('http://pdfview.tonb.ru:8088/Default.aspx?bd=EI&mfn=10408')">Load url in child
+    window</a>
+
+<script src="js/index.js"></script>
+
+</body>
+</html>
